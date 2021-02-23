@@ -1,64 +1,27 @@
 body {
-    background-color: azure;
-    background-image: url(Akan2.jpg);
-    background-size: cover;
-    background-position: center;
-
-
-    
-
+background-color: dimgrey;
+margin: auto;
+padding: 0%;
+font-style: italic;
 }
 h1 {
-    color: red;
-    font-size: 300%;
-    align-content: center;
-    font-style: italic;
-    box-shadow: slategray;
-    border-bottom-left-radius: 5vh;
+    background-color: Blue;
 
-}
-p {
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 0rem;
-margin-top: 5vh;
-margin-bottom: 5vh;
-
-}
-container {
-    align-content: center;
 }
 
 form {
-    width: 360px;
-    padding: 10% 0 0;
-    margin: auto;
-    font-size: 2vh;
-    font-family: sans-serif;
-    outline: 1;
-    background: rgba(7, 189, 195, 0.8);
+    background-color: dodgerblue;
+    font-size: 0%;
+    font color: green;
+    height: 100%
+    Width: 100%
     
 }
-input {
-    border-color: blue;
-    box-sizing: content-box;
-    outline: 1;
-    padding-left: 15px;
-    margin: 1em;
-    align-content: space-between;
-    font-size: 14px;
-
-}
-.form button:,.form button:active {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0em;
-    background: #4ca504;
-    width: 100%;
-    border: 0;
-    padding: 15px;
+button {
+    background-color: darkgrey;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     
-    
-
 }
 
