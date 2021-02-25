@@ -19,7 +19,7 @@ function validateMonth() {
         alert("Invalid Month");
         return false;
     } else if (month > 0 || date <= 12) {
-        alert("Looks Good!");
+        alert("OK!");
         return false;
     }
 
