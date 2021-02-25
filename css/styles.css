@@ -1,9 +1,17 @@
 .container {
-    background-color: wheat;
+    background-color: rgb(159, 250, 230);
+    text-align: center;
+    text-overflow: inherit;
+    text-emphasis-color: blue;
+    
+    
 }
 h1 {
     font color: green;
 }
 .body {
     font-size: 18px;
+}
+header {
+    text-align: center;
 }
