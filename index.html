@@ -1,57 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akan Naming Convention</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="bootstrap.css" <script src="js/script.js" </script>
+    <meta charset="utf-8">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="bootstrap/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
+<title>Akan Naming</title>
+<br><br>
+
 <body>
-    <script src="js/main.js"></script>
-    <div class="Wrapper" </body>
-        <div class="formelements" < class="description">
-            <h1 class="display-4-text-primary">The Akan Naming Convnetion</h1>
-            <div>
-                This website tries to bring information about a Ghanian system
-                of naming their children. children are named according to their
-                day of birth. The first name is usually a day name which corresponds
-                with the day the child was born. E.g for Male children the naming would
-                be as follows
-                <p> Sunday: Kwasi Monday:Kwadwo, Tuesday: Kwabena, Wedneday:Kwaku, Thursday: Yaw, Friday:
-                    Kofi and Saturday: Kwame.</p>,
+    <div class="container">
+        <div class="jumbotron">
+            <center>
+                <h1>Akan Naming Convention</h1>
+            </center>
+            <p>The Akan Naming program will input the birthday, that will show date and year one was born.
+                system will also be able to provide the <em>Akan Name<em Nameof the Individual</p>
+        </div>
+    </div>
+    <center>
+        <div class="container">
+            <div class="jumbotron">
+                <label>Date of Birth</label>
+                <div class="col-lg-3">
+                    <input type="number" id="date" class="form-control" placeholder="Enter Date of Birth" required />
+                    <button type="button" onclick="validateDate()" class="form-control"> Validate Date</button>
+                </div>
 
-                Else If For females, the various names would be as follows;
+                <label>Month of Birth</label>
+                <div class="col-lg-3">
+                    <input type="number" id="month" class="form-control" placeholder="Enter month of Birth" required />
+                    <button type="button" onclick="validateMonth()" class="form-control"> Validate Month</button>
+                </div>
 
-                <p>Sunday: Akosua, Monday: Adwoa,
-                    Tuesday: Abena,Wedneday:Akua, Thursday: Yaa; Friday: Afua; Saturday: Ama.
-                    These names spread across the country of Ghana.</p>
+                <label>Year of Birth</label>
+                <div class="col-lg-3">
+                    <input type="number" id="year" class="form-control" placeholder="Enter Year of Birth" min="0"
+                        max="4" required />
+                    <!--button type="button" class="form-control"> Validate Year</button>-->
+                </div>
+
+                <label>Day Born</label>
+                <div class="col-lg-3">
+                    <input type="number" id="dayweek" class="form-control" placeholder="Day Born" />
+                    <button type="button" onclick="dayBorn()" class="form-control"> Day Born</button>
+                </div>
+                <p>
+                <div class="col-lg-3">
+                    <select name="gender" id="gender" class="form-control">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <br><br>
+                <center><button onclick="akanName()" class="btn btn-success">Get Akan Name</button></center>
+                </p>
             </div>
-            <form>
+        </div>
+    </center>
 
-                <h1 class="text-primary">Enter your birthdate</h1>
-                <input type="text" id="day" class="form-control" placeholder="Day" required>
-                <p id="dayerror"></p>
-                <input type="text" id="Month" class="form-control" placeholder="Month" required>
-                <p id="Montherror"></p>
-                <input type="text" id="year" class="form-control" placeholder="Year" required>
-                <p id="Yearerror"></p>
-                <h1 text-primay>select your gender</h1>
-                <label for="male">Male:</label>
-                <input type="checkbox" id="male" class="">
-                <label for="male">Female:</label>
-                <input type="checkbox" id="female" class=""><br>
-                <i class="fas fa-id-badge"></i>
-                <p id="check-boxerror"></p>
-                <button type="button" onclick="fn()" class="btn btn-large btn-block btn-outline-primary">Get Akan
-                    Name</button>
-                <p class="Message">Already checked? <a href="#">Check Again</a></p>
-            </form>
-
-            <body>
+</body>
 
 </html>

@@ -1,27 +1,9 @@
-body {
-background-color: dimgrey;
-margin: auto;
-padding: 0%;
-font-style: italic;
+.container {
+    background-color: wheat;
 }
 h1 {
-    background-color: Blue;
-
-}
-
-form {
-    background-color: dodgerblue;
-    font-size: 0%;
     font color: green;
-    height: 100%
-    Width: 100%
-    
 }
-button {
-    background-color: darkgrey;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    
+.body {
+    font-size: 18px;
 }
-
