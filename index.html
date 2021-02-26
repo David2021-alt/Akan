@@ -25,49 +25,49 @@
                 <h1>Akan Naming Convention</h1>
             </center>
             <p>The Akan Naming program will input the birthday, that will show date and year one was born.
-                system will also be able to provide the <em>Akan Name<em Nameof the Individual</p>
+                system will also be able to provide the <em>Akan Name<em Name of the Individual</p>
         </div>
     </div>
     <center>
         <div class="container">
             <div class="jumbotron">
+
                 <label>Date of Birth</label>
                 <div class="col-lg-3">
                     <input type="number" id="date" class="form-control" placeholder="Enter Date of Birth" required />
-                    <button type="button" onclick="validateDate()" class="form-control"> Validate Date</button>
+
                 </div>
 
                 <label>Month of Birth</label>
                 <div class="col-lg-3">
                     <input type="number" id="month" class="form-control" placeholder="Enter month of Birth" required />
-                    <button type="button" onclick="validateMonth()" class="form-control"> Validate Month</button>
+
                 </div>
 
                 <label>Year of Birth</label>
                 <div class="col-lg-3">
                     <input type="number" id="year" class="form-control" placeholder="Enter Year of Birth" min="0"
-                        max="4" required />
+                        maxlength="4" , maxwidth="1" required />
                     <!--button type="button" class="form-control"> Validate Year</button>-->
                 </div>
 
                 <label>Day Born</label>
                 <div class="col-lg-3">
                     <input type="number" id="dayweek" class="form-control" placeholder="Day Born" />
-                    <button type="button" onclick="dayBorn()" class="form-control"> Day Born</button>
+
+                    <p>
+                    <div class="col-lg-3">
+                        <select name="gender" id="gender" class="form-control">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    <center><button onclick="akanName()" class="btn btn-success">Get Akan Name</button></center>
+                    </p>
                 </div>
-                <p>
-                <div class="col-lg-3">
-                    <select name="gender" id="gender" class="form-control">
-                        <option value="">Select Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-                </div>
-                <br><br>
-                <center><button onclick="akanName()" class="btn btn-success">Get Akan Name</button></center>
-                </p>
             </div>
-        </div>
     </center>
 
 </body>

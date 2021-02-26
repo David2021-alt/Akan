@@ -1,11 +1,11 @@
 function validateDate() {
     var date;
     date = Number(document.getElementById("date").value);
-    if (date < 1 || date >= 32) {
+    if (date < 1 || date >= 31) {
         alert("Invalid Date!");
         return false;
     }   else if (date >=1 || date <= 31) {
-        alert("Looks Good");
+        alert("Correct!");
         return false;
     }
 
